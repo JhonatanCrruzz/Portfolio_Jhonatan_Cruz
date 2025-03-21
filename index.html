@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta para SEO -->
+    <meta name="title" content="Jhonatan Cruz" />
+    <meta name="description" content="I’m Jhonatan Cruz, a passionate self-taught web developer with expertise in HTML, CSS, JavaScript, MySQL, and expanding into Python and C#. I’m committed to creating user-friendly websites and applications, solving real-world problems, and collaborating on impactful projects." />
+    <meta name="keywords" content="web developer, HTML, CSS, JavaScript, Python, C#, MySQL, portfolio, Jhonatan Cruz, JhonatanCrruzz, Jhonatan, Cruz, jhonatan cruz, jhonatancrruzz, jhonatan, cruz, Cruz" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <!-- Favicon -->
+    <link rel="icon" href="https://jhonatancrruzz.com/assets/icon/favicon.ico" type="image/x-icon">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jhonatancrruzz.com" />
+    <meta property="og:title" content="Jhonatan Cruz - Web Developer | HTML, CSS, JavaScript" />
+    <meta property="og:description" content="🚀 Web Developer | HTML, CSS, JavaScript | Construyendo soluciones digitales efectivas. Conoce más sobre mis proyectos. 👨‍💻" />
+    <meta property="og:image" content="https://jhonatancrruzz.com/assets/imagen/selfie.webp" />
+    <meta property="og:site_name" content="Jhonatan Cruz" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jhonatancrruzz.com" />
+    <meta property="twitter:title" content="Jhonatan Cruz - Web Developer | HTML, CSS, JavaScript" />
+    <meta property="twitter:description" content="🚀 Web Developer | HTML, CSS, JavaScript | Construyendo soluciones digitales efectivas. Conoce más sobre mis proyectos. 👨‍💻" />
+    <meta property="twitter:image" content="https://jhonatancrruzz.com/assets/imagen/selfie.webp" />
+    <!-- Meta Tags para Compatibilidad con IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a5964c2c99.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="./css/normalice.css">
+    <script src="./js/script.js"></script>
+    <!-- Autoría -->
+    <meta name="author" content="Jhonatan Cruz" />
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JHONATAN C.</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href= "#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">RESUME</a></li>
+                    <!--<li><a href="#portfolio" onclick="seleccionar()">PROJECTS</a></li>-->
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/imagen/selfie.webp" alt="Foto de perfil Jhonatan Cruz">
+            </div>
+            <h1>JHONATAN CRUZ</h1>
+            <h2>Web development enthusiast</h2>
+            <div class="redes">
+                <a class="youtube" href="https://www.youtube.com/@ByteClimb" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a class="x" href="https://x.com/ByteClimb" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="linkedink" href="https://www.linkedin.com/in/jhonatancrruzz/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a  class="instagram" href="https://www.instagram.com/byteclimb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hi, I’m Jhonatan Cruz.</span> a passionate self-taught web developer committed to creating user-friendly websites and applications. I have a strong foundation in HTML, CSS, JavaScript, and MySQL, and I’m currently expanding my skills in Python and C# to take on more complex challenges.
+
+            My journey into programming began with the need to automate personal projects and solve real-world problems. Since then, I have been continuously learning, refining my skills, and collaborating on impactful projects. I thrive in team environments, always seeking opportunities to contribute, grow, and support others.
+            <br><br>
+            <span>🚀 What I do:</span>
+            <br><br>
+            🌐 Develop and optimize websites and applications.
+            <br>
+            💻 Work with front-end and back-end technologies.
+            <br>
+            📚 Continuously learn and apply new programming skills.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            31-10-1996
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            <a href="https://wa.me/573216542131?text=Hola%2C%20Jhonatan.%20He%20visto%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20servicios.%20%C2%BFPodr%C3%ADamos%20agendar%20una%20reuni%C3%B3n%20para%20discutir%20m%C3%A1s%20detalles%3F
+                            " target="_blank">+57 3216542131</a>
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkRZrSCgRHFjXQhHVrqFFwhJSgMBLblkfzlfMZJrmpbJmjRdZXdNlLKZCnpCrxHzwdvzl" target="_blank">jhonatancrruzz@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/JhonatanCrruzz" target="_blank">JhonatanCrruzz</a>
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            <a href="https://www.google.com/maps/place/31249+Hohenhameln/@52.2821781,9.9044629,11z/data=!3m1!4b1!4m6!3m5!1s0x47b000ada785d2f3:0x4248963c6584430!8m2!3d52.2583784!4d10.0628289!16zL20vMGNoZDE0?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Hohenhameln - Germany</a>
+                        </li>
+                        <li>
+                            <strong>Position</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>TECH</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <span>CULTURE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-handshake"></i>
+                            <span>TEAMWORK</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>INNOVATION</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>ENGINEERING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>WEB DEVELOPMENT</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="downloadButton">Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>67%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Resume</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>International Business</h4>
+                        <span class="casa">Corporación Universitaria Americana</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Bachelor’s Degree in International Business with a strong foundation in global markets, negotiation, and strategic decision-making. Passionate about leveraging technology to optimize business processes and drive innovation.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!--<div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>-->
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>Freelance</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2024 - 2025</span>
+                        <p>Freelance web developer specializing in creating user-friendly websites and applications. Experienced in HTML, CSS, JavaScript, and MySQL, with a passion for solving problems and optimizing digital experiences.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!--<div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./assets/imagen/preview_color_collections.webp" alt="Imagen alusiva del proyecto Color Collection">
+                    <div class="overlay">
+                        <h3>
+                            <a href="https://jhonatancrruzz.github.io/Color_Collection/" target="_blank">Color Collection</a>
+                            
+                        </h3>
+                        <p> HTML | CSS | JavaScript</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/imagen/preview_password_generator.webp" alt="Imagen alusiva del proyecto Password Generator">
+                    <div class="overlay">
+                        <h3>
+                            <a href="https://jhonatancrruzz.github.io/Password_Generator/" target="_blank">Password Generator</a>
+                        </h3>
+                        <p> HTML | CSS | JavaScript</p>
+                    </div>
+                </div>
+                <!-- <div class="proyecto">
+                    <img src="/assets/imagen/proyecto-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/assets/imagen/proyecto-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/assets/imagen/proyecto-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/assets/imagen/proyecto-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> -->
+            </div>
+        </div> 
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT ME</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formspree.io/f/xnnjyqyj" method="POST" accept-charset="UTF-8" onsubmit="resetForm()" target="_blank">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="contact-number" placeholder="Contact Number" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" cols="30" rows="9" placeholder="Send Message" required></textarea>
+                        <button type="submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- Mapa-->
+                <div class="col">
+                    <img src="./assets/imagen/location.webp" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hohenhameln - Germany
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Escribeme: +573216542131 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: jhonatancrruzz@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a class="youtube" href="https://www.youtube.com/@ByteClimb" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a class="x" href="https://x.com/ByteClimb" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a class="linkedink" href="https://www.linkedin.com/in/jhonatancrruzz/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a  class="instagram" href="https://www.instagram.com/byteclimb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
