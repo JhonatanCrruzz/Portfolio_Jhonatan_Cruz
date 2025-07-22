@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 /* MENU */
-.contenedor-header{
+.container-header{
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -18,7 +18,7 @@ html{
     left: 0;
     z-index: 99;
 }
-.contenedor-header header{
+.container-header header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -26,17 +26,17 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+.container-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
     color: #1E90FF;
     text-decoration: none;
 }
-.contenedor-header header ul{
+.container-header header ul{
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
+.container-header header nav ul li a{
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -44,7 +44,7 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+.container-header header nav ul li a:hover{
     color: #1E90FF;
 }
 .nav-responsive{
@@ -55,8 +55,15 @@ html{
     cursor: pointer;
     display: none;
 }
+
+.container-header header nav ul li a.active {
+    color: #1E90FF;
+    font-weight: bold; /* opcional */
+    border-bottom: 2px solid #1E90FF; /* opcional */
+}
+
 /* SECCION I N I C I O */
-.inicio{
+.home{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(https://jhonatancrruzz.com/assets/imagen/front_page.webp);
     background-size: cover;
@@ -65,7 +72,7 @@ html{
     display: flex;
     align-items: center;
 }
-.inicio .contenido-banner{
+.home .content-banner{
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
@@ -73,7 +80,7 @@ html{
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+.home .content-banner img{
     margin-top: 40px;
     border: 10px solid #1E90FF;
     display: block;
@@ -83,16 +90,16 @@ html{
     border-radius: 50%;
     object-fit: cover;
 }
-.inicio .contenido-banner h1{
+.home .content-banner h1{
     margin-top: 40px;
     font-size: 35px;
     font-family: 'Righteous';
 }
-.inicio .contenido-banner h2{
+.home .content-banner h2{
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+.home .content-banner .networks a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -106,7 +113,7 @@ html{
     transition: .3s;
 }
 /* YouTube */
-.inicio .contenido-banner .redes .youtube:hover {
+.home .content-banner .networks .youtube:hover {
     background-color: #FF0033;  /* Fondo rojo de YouTube */
     background-image: linear-gradient(45deg, #FF0033 25%, #FF3333 50%, #FF0033 75%);
     background-size: 400% 400%;
@@ -120,23 +127,23 @@ html{
     100% { background-position: 0% 50%; }
 }
 
-/* X (Twitter) */
-.inicio .contenido-banner .redes .x:hover {
+/* X (Tiktok) */
+.home .content-banner .networks .tiktok:hover {
     background-color: #020202;  /* Fondo negro de X */
     background-image: linear-gradient(45deg, #020202 25%, #333333 50%, #020202 75%);
     background-size: 400% 400%;
-    animation: move-background-x 3s ease infinite;
+    animation: move-background-tiktok 3s ease infinite;
 }
 
-/* Animación de movimiento de X (Twitter) */
-@keyframes move-background-x {
+/* Animación de movimiento de X (tiktok) */
+@keyframes move-background-tiktok {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
 /* LinkedIn */
-.inicio .contenido-banner .redes .linkedink:hover {
+.home .content-banner .networks .linkedink:hover {
     background-color: #0A66C2;  /* Fondo azul de LinkedIn */
     background-image: linear-gradient(45deg, #0A66C2 25%, #1A80D0 50%, #0A66C2 75%);
     background-size: 400% 400%;
@@ -151,7 +158,7 @@ html{
 }
 
 /* Instagram (gradiente) */
-.inicio .contenido-banner .redes .instagram:hover {
+.home .content-banner .networks .instagram:hover {
     background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
     background-size: 400% 400%;
     animation: move-background-instagram 3s ease infinite;
@@ -164,72 +171,72 @@ html{
     100% { background-position: 0% 50%; }
 }
 
-.sobremi{
+.aboutme{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+.aboutme .content-section{
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+.aboutme h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.sobremi .contenido-seccion p{
+.aboutme .content-section p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+.aboutme .content-section p span{
     color: #1E90FF;
     font-weight: bold;
 
 }
-.sobremi .fila{
+.aboutme .row{
     display: flex;
 }
-.sobremi .fila .col
+.aboutme .row .column
 {
     width: 50%;
 }
 
-.sobremi .fila .col h3{
+.aboutme .row .column h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+.aboutme .row .column ul{
     list-style: none;
 }
-.sobremi .fila .col ul li{
+.aboutme .row .column ul li{
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+.aboutme .row .column ul li strong{
     display: inline-block;
     color: #1E90FF;
     width: 130px;
 
 }
-.sobremi .fila .col ul li span{
+.aboutme .row .column ul li span{
     background-color: #1E90FF;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col a{
+.aboutme .row .column a{
     text-decoration: none;
     color: #fff;
 }
-.sobremi .fila .col .contenedor-intereses{
+.aboutme .row .column .container-interests{
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+.aboutme .row .column .container-interests .interests{
     width: 100px;
     height: 100px;
     background-color: #252A2E;
@@ -242,14 +249,14 @@ html{
     transition: .3s;
     font-size: .85rem;
     text-align: center;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+}.aboutme .row .column .container-interests .interests:hover{
     background-color: #1E90FF;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+.aboutme .row .column .container-interests .interests i{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.aboutme button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -262,7 +269,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+.aboutme button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -272,7 +279,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+.aboutme button:hover .overlay{
     width: 100%;
 }
 /* SECCION S K I L L S */
@@ -281,7 +288,7 @@ html{
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
+.skills .content-section{
     max-width: 1100px;
     margin: auto;
 }
@@ -292,214 +299,109 @@ html{
     padding: 20px 0;
 
 }
-.skills .fila{
+.skills .row{
     display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #1E90FF;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1E90FF;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 55%;}
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.skills .skill .html{
-    width: 0%;
-    animation: 2s html forwards;
-}
-@keyframes html {
-    0%{width: 0%;}
-    100%{width: 89%;}
+.skills-programing{
+    width: 210px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.skills .skill .css{
-    width: 0%;
-    animation: 2s css forwards;
-}
-@keyframes css {
-    0%{width: 0%;}
-    100%{width: 67%;}
+.skills-programing h3{
+    font-size: 1.5rem;
 }
 
-.skills .skill .sql{
-    width: 0%;
-    animation: 2s sql forwards;
+.skills-programing img{
+    width: 100px;
+    transition: 1s;
 }
-@keyframes sql {
-    0%{width: 0%;}
-    100%{width: 65%;}
+.skills-programing img:hover{
+    width: 120px;
+
 }
 
-.skills .skill .git{
-    width: 0%;
-    animation: 2s git forwards;
-}
-@keyframes git {
-    0%{width: 0%;}
-    100%{width: 93%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width:87%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
 /* SECCION CURRICULUM */
-.curriculum{
+.resume{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.resume .content-section{
     max-width: 1100px;
     margin: auto;
 }
 
-.curriculum h2{
+.resume h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.curriculum .fila{
+.resume .row{
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+.resume .row .column{
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+.resume .row .column h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+.resume .row .left{
     border-right: 2px solid #252A2E;
 }
-.curriculum .fila .derecha{
+.resume .row .right{
     border-left: 2px solid #252A2E;
 
 }
-.curriculum .fila .derecha h3{
+.resume .row .right h3{
     padding-left: 1.2rem;
 }
-.curriculum .fila .item{
+.resume .row .item{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
-.curriculum .fila .item h4{
+.resume .row .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+.resume .row .item .house{
     color: #1E90FF;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+.resume .row .item .date{
     display: block;
     color: #1E90FF;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+.resume .row .item p{
     line-height: 24px;
 }
-.curriculum .fila .izq{
+.resume .row .izq{
     border-right: 2px solid #1E90FF;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+.resume .row .der{
     border-left: 2px solid #1E90FF;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+.resume .row .item .left-connector{
     height: 2px;
     background-color: #1E90FF;
     width: 47px;
@@ -508,7 +410,7 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+.resume .row .item .left-connector .left-circle{
     display: block;
     height: 10px;
     width: 10px;
@@ -518,7 +420,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+.resume .row .item .right-connector{
     height: 2px;
     background-color: #1E90FF;
     width: 47px;
@@ -527,7 +429,7 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+.resume .row .item .right-connector .right-circle{
     display: block;
     height: 10px;
     width: 10px;
@@ -543,7 +445,7 @@ html{
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+.portfolio .content-section{
     max-width: 1100px;
     margin: auto;
 }
@@ -553,23 +455,23 @@ html{
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
+.portfolio .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfolio .galeria .proyecto{
+.portfolio .gallery .project{
     position: relative;
     max-width: 340px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+.portfolio .gallery .project img{
     width: 100%;
     display: block;
 }
-.portfolio .galeria .proyecto .overlay{
+.portfolio .gallery .project .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -584,7 +486,7 @@ html{
     letter-spacing: 3px;
     opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3{
+.portfolio .gallery .project .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 }
@@ -593,38 +495,38 @@ html{
     font-family: inherit;    /* Hereda la fuente del h3 */
     text-decoration: none;   /* Quita el subrayado, si lo deseas */
 }  
-.portfolio .galeria .proyecto .overlay:hover{
+.portfolio .gallery .project .overlay:hover{
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+.portfolio .gallery .project .overlay:hover h3{
     margin-bottom: 0px;
 }
 /* SECCION CONTACTO */
-.contacto{
+.contact{
     background-image: url(https://jhonatancrruzz.com/assets/imagen/contact_bg.webp);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
 }
-.contacto .contenido-seccion{
+.contact .content-section{
     max-width: 1100px;
     margin: auto;
 }
-.contacto h2{
+.contact h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+.contact .row{
     display: flex;
 }
-.contacto .col{
+.contact .column{
     width: 50%;
     padding: 10px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
+.contact .column input, .contact .column textarea{
     display: block;
     width: 100%;
     padding: 18px;
@@ -634,7 +536,7 @@ html{
     color: #fff;
     font-size: 18px;
 }
-.contacto button{
+.contact button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -647,7 +549,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+.contact button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -657,13 +559,13 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+.contact button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
+.contact .column img{
     width: 100%;
 }
-.contacto .col .info{
+.contact .column .info{
     position: absolute;
     top: 50%;
     background-color: #252A2E;
@@ -673,13 +575,13 @@ html{
     transform: translate(-50%, -50%);
     width: 60%;
 }
-.contacto .col .info ul{
+.contact .column .info ul{
     list-style: none;
 }
-.contacto .col .info ul li{
+.contact .column .info ul li{
     margin-bottom: 8px;
 }
-.contacto .col .info ul li i{
+.contact .column .info ul li i{
     /* color: #1E90FF; */
     display: inline-block;
     margin-right: 8px;
@@ -692,10 +594,10 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes{
+footer .networks{
     margin-bottom: 20px;
 }
-footer .redes a{
+footer .networks a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -709,7 +611,7 @@ footer .redes a{
     transition: .3s;
 }
 /* YouTube en el footer */
-footer .redes .youtube:hover {
+footer .networks .youtube:hover {
     background-color: #FF0033;  /* Fondo rojo de YouTube */
     background-image: linear-gradient(45deg, #FF0033 25%, #FF3333 50%, #FF0033 75%);
     background-size: 400% 400%;
@@ -723,23 +625,23 @@ footer .redes .youtube:hover {
     100% { background-position: 0% 50%; }
 }
 
-/* X (Twitter) en el footer */
-footer .redes .x:hover {
+/* X (Tiktok) en el footer */
+footer .networks .tiktok:hover {
     background-color: #020202;  /* Fondo negro de X */
     background-image: linear-gradient(45deg, #020202 25%, #333333 50%, #020202 75%);
     background-size: 400% 400%;
-    animation: move-background-x 3s ease infinite;
+    animation: move-background-tiktok 3s ease infinite;
 }
 
-/* Animación de movimiento de X (Twitter) */
-@keyframes move-background-x {
+/* Animación de movimiento de X (Tiktok) */
+@keyframes move-background-tiktok {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
 /* LinkedIn en el footer */
-footer .redes .linkedink:hover {
+footer .networks .linkedink:hover {
     background-color: #0A66C2;  /* Fondo azul de LinkedIn */
     background-image: linear-gradient(45deg, #0A66C2 25%, #1A80D0 50%, #0A66C2 75%);
     background-size: 400% 400%;
@@ -754,7 +656,7 @@ footer .redes .linkedink:hover {
 }
 
 /* Instagram en el footer */
-footer .redes .instagram:hover {
+footer .networks .instagram:hover {
     background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
     background-size: 400% 400%;
     animation: move-background-instagram 3s ease infinite;
@@ -767,7 +669,7 @@ footer .redes .instagram:hover {
     100% { background-position: 0% 50%; }
 }
 
-footer .arriba{
+footer .above{
     display: block;
     width: 50px;
     height: 50px;
@@ -806,60 +708,60 @@ footer .arriba{
     }
 }
 @media screen and (max-width:700px){
-    .sobremi .fila{
+    .aboutme .row{
         display: block;
     }
-    .sobremi .fila .col{
+    .aboutme .row .column{
         width: fit-content;
     }
 
-    .skills .fila{
+    .skills .row{
         display: block;
     }
-    .skills .fila .col{
+    .skills .row .column{
         width: 100%;
     }
-    .skills .fila .col .barra-skill{
+    .skills .row .column .skill-bar{
         width: 100%;
     }
 
-    .curriculum .fila{
+    .resume .row{
         display: block;
     }
-    .curriculum .fila .col{
+    .resume .row .column{
         width: 90%;
     }
-    .curriculum .fila .derecha{
+    .resume .row .right{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
+    .portfolio .gallery{
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+    .portfolio .gallery .project{
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
+    .portfolio .gallery .project img{
         width: 100%;
     }
-    .contacto .fila{
+    .contact .row{
         display: block;
     }
-    .contacto .fila .col{
+    .contact .row .column{
         width: 100%;
     }
 }
-.fila .col li a:hover{
+.row .column li a:hover{
     color: #1E90FF;
 }
-.contacto .fa-location-dot {
+.contact .fa-location-dot {
     color: #B94439; /* Verde */
 }
-.contacto .fa-whatsapp {
+.contact .fa-whatsapp {
     color: #28a745; /* Verde */
 }
-.contacto .fa-envelope {
+.contact .fa-envelope {
     color: #4584EF; /* Verde */
 }
 

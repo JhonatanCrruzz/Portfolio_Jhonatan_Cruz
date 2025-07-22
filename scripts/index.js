@@ -20,7 +20,7 @@ function efectoHabilidades(){
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
+        let habilidades = document.getElementsByClassName("progress");
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("html");
         habilidades[2].classList.add("css");
@@ -58,3 +58,26 @@ function resetForm() {
         document.querySelector('form').reset();
     }, 2000); // Esto restablece el formulario 2 segundos después del envío
 }
+
+window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    let current = "";
+
+    sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+    }
+    });
+
+    navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+    }
+    });
+});
