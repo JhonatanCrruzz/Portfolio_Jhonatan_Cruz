@@ -708,6 +708,18 @@ footer .above{
     }
 }
 @media screen and (max-width:700px){
+    .skills .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .skills-programing {
+        width: 45%; /* se adaptan 2 por fila */
+        margin-bottom: 20px;
+    }
+
     .aboutme .row{
         display: block;
     }
