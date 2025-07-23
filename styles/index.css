@@ -312,7 +312,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .skills-programing h3{
@@ -708,6 +707,7 @@ footer .above{
     }
 }
 @media screen and (max-width:700px){
+
     .skills .row {
         display: flex;
         flex-wrap: wrap;
@@ -719,17 +719,21 @@ footer .above{
         width: 45%; /* se adaptan 2 por fila */
         margin-bottom: 20px;
     }
-
+    
     .aboutme .row{
         display: block;
     }
     .aboutme .row .column{
         width: fit-content;
     }
-
-    .skills .row{
-        display: block;
+    .aboutme .row .column .container-interests{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    /* .skills .row{
+        display: block;
+    } */
     .skills .row .column{
         width: 100%;
     }
