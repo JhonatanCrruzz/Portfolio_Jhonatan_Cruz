@@ -297,6 +297,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    padding-bottom: 50px;
 
 }
 .skills .row{
@@ -307,8 +308,8 @@ html{
 }
 
 .skills-programing{
-    width: 210px;
-    height: 150px;
+    width: 140px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
