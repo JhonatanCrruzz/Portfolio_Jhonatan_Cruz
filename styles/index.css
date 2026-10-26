@@ -501,6 +501,53 @@ html{
 .portfolio .gallery .project .overlay:hover h3{
     margin-bottom: 0px;
 }
+.portfolio .project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+.portfolio .project-card{
+    background-color: #1e2326;
+    border-top: 4px solid #1E90FF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform .3s;
+}
+.portfolio .project-card:hover{
+    transform: translateY(-4px);
+}
+.portfolio .project-card .project-tag{
+    color: #1E90FF;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.portfolio .project-card h3{
+    font-size: 24px;
+}
+.portfolio .project-card p{
+    line-height: 1.5;
+}
+.portfolio .project-card .project-stack{
+    color: #a9b1b8;
+    font-size: 14px;
+    margin-top: auto;
+}
+.portfolio .project-card a{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    width: fit-content;
+    text-decoration: none;
+    transition: .3s;
+}
+.portfolio .project-card a:hover{
+    background-color: #1E90FF;
+    border-color: #1E90FF;
+}
 /* SECCION CONTACTO */
 .contact{
     background-image: url(https://jhonatancrruzz.com/assets/imagen/contact_bg.webp);
@@ -564,6 +611,9 @@ html{
 }
 .contact .column img{
     width: 100%;
+}
+.contact .column.contact-info{
+    min-height: 220px;
 }
 .contact .column .info{
     position: absolute;
