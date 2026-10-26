@@ -544,6 +544,11 @@ html{
     text-decoration: none;
     transition: .3s;
 }
+.portfolio .project-card .project-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .portfolio .project-card a:hover{
     background-color: #1E90FF;
     border-color: #1E90FF;
